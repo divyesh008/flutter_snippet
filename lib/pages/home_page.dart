@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_snippets/drawer.dart';
+import 'package:flutter_snippets/utils/Constants.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
@@ -31,7 +32,15 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Cool App Chap-4"),
+        title: Text("Cool App Chap-5"),
+        actions: [
+          IconButton(
+              icon: Icon(Icons.logout),
+              onPressed: () {
+                Constants.prefs.setBool("loggedIn", false);
+                Navigator.pushReplacementNamed(context, "/login");
+              })
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

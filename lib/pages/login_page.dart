@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_snippets/bg_image.dart';
+import 'package:flutter_snippets/utils/Constants.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -65,7 +66,12 @@ class _LoginPageState extends State<LoginPage> {
                           //     context,
                           //     MaterialPageRoute(
                           //         builder: (context) => HomePage()));
-                          Navigator.pushNamed(context, "/home");
+
+                          Constants.prefs.setBool("loggedIn", true);
+
+                          //Move it from stack so when HW back button pressed
+                          //on Android it will not get redirect to login page
+                          Navigator.pushReplacementNamed(context, "/home");
                         },
                         child: Text("Sign In"),
                         color: Colors.purple,

@@ -23,6 +23,11 @@ class MyDrawer extends StatelessWidget {
           leading: Icon(Icons.chat),
           title: Text("Messages"),
           trailing: Icon(Icons.send),
+        ),
+        ListTile(
+          leading: Icon(Icons.logout),
+          title: Text("Logout"),
+          onTap: () => Navigator.pushNamed(context, "/login"),
         )
       ],
     ));

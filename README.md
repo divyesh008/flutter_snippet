@@ -6,6 +6,9 @@ A new Flutter application.
 
 This project is a starting point for a Flutter application.
 
-Chapter 4: Network call
+### Chapter 4: Api Call using http
 
-- In progress
+- Installed http extension
+- Get data from api:
+  - "https://jsonplaceholder.typicode.com/photos"
+- Used ListView.Buidler to show fetched data

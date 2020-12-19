@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_snippets/drawer.dart';
+import 'package:flutter_snippets/widgets/drawer.dart';
 import 'package:flutter_snippets/utils/Constants.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

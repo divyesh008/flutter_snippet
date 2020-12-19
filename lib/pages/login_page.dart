@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_snippets/bg_image.dart';
+import 'package:flutter_snippets/widgets/bg_image.dart';
 import 'package:flutter_snippets/utils/Constants.dart';
 
 class LoginPage extends StatefulWidget {

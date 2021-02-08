@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_snippets/pages/category_page.dart';
 import 'package:flutter_snippets/pages/home_page.dart';
 import 'package:flutter_snippets/pages/login_page.dart';
 import 'package:flutter_snippets/utils/Constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 Future main() async {
-  //Insures that widgets (everythings) are initialized
+  //Insures that widgets (every things) are initialized
   WidgetsFlutterBinding.ensureInitialized();
 
   Constants.prefs = await SharedPreferences.getInstance();
@@ -20,7 +21,8 @@ Future main() async {
       theme: ThemeData(primarySwatch: Colors.purple),
       routes: {
         "/login": (context) => LoginPage(),
-        "/home": (context) => HomePage()
+        "/home": (context) => HomePage(),
+        "/category": (context) => CategoryPage(),
       },
     ),
   );

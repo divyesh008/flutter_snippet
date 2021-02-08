@@ -18,11 +18,13 @@ class MyDrawer extends StatelessWidget {
         ListTile(
           leading: Icon(Icons.home),
           title: Text("Home"),
+          onTap: ()=>Navigator.pushNamed(context, "/home"),
         ),
         ListTile(
-          leading: Icon(Icons.chat),
-          title: Text("Messages"),
+          leading: Icon(Icons.category),
+          title: Text("Category"),
           trailing: Icon(Icons.send),
+          onTap: ()=> Navigator.pushNamed(context, "/category"),
         ),
         ListTile(
           leading: Icon(Icons.logout),
